@@ -24,7 +24,7 @@ module.exports = {
                 exclude: /node_modules/,
                 query: {
                     cacheDirectory: true,
-                    presets: ['babel-preset-es2015', 'babel-preset-react', 'stage-2', ['env', {loose: true, module: false}]],
+                    presets: ['babel-preset-env', 'babel-preset-react', 'stage-2', ['env', {loose: true, module: false}]],
                     plugins: ['babel-plugin-transform-object-assign', 'babel-plugin-add-module-exports', 'lodash']
                 }
             }

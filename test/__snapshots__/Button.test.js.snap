@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Button Component for the expected output 1`] = `
+<div
+  className="vx_btn-group _btn_group"
+>
+  <button
+    className="vx_btn "
+    data-automation-id=""
+    id="defaultButton"
+    name="defaultButton"
+  >
+    Default Button Text
+  </button>
+</div>
+`;
