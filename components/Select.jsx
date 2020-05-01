@@ -21,7 +21,7 @@
  *      keyAsValue = true,
  *      disablePlaceHolder = true
  *  }
- * }
+ * } 
  */
 
 const Select = (props) => {
