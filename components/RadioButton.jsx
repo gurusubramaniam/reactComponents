@@ -20,9 +20,8 @@
  */
 const RadioButton = (props) => {
     const {fieldProps = {}, content = {male:'Male', female : 'Female'}} = props;
-    const {customCssClassName} = fieldProps;
-    const renderRadio = (config) => {
-        const {name = 'defaultRadio', id = 'defaultRadio', radioValues = ['male', 'female'], radioLabels = ['male', 'female']} = config;
+    const {customCssClassName='radioBtn', name = 'defaultRadio', id = 'defaultRadio', radioValues = ['male', 'female'], radioLabels = ['male', 'female']} = fieldProps;
+    const renderRadio = () => {
         return radioLabels.map((radioLabel, index) => ([
             <input type="radio" name ={name} id={`${id}${index + 1}`} value={radioValues[index]} key={`radio${index + 1}`}/>,
             <label key={`radioLabel${index + 1}`} htmlFor={`${id}${index + 1}`}>{content[`${radioLabel}`]} </label>
@@ -31,8 +30,8 @@ const RadioButton = (props) => {
     };
 
     return (
-        <div className ={`vx_radio ${customCssClassName}`}>
-            {renderRadio(fieldProps)}
+        <div className = {`${customCssClassName}_container`}>
+            {renderRadio()}
         </div>
     );
 };

@@ -23,12 +23,12 @@ const Button = (props) => {
     const {name = 'defaultButton', buttonLabel = 'DefaultButtonText', value, customBtnClassName = '', dataAutomationId = '', btnDisabled} = fieldProps;
 
     return (
-        <div className={`vx_btn-group ${customBtnClassName}_btn_group`}>
+        <div className={customBtnClassName}>
             <button
                 name={name}
                 id={name}
                 value={value}
-                className={`vx_btn ${customBtnClassName}`}
+                className= {customBtnClassName}
                 data-automation-id={dataAutomationId}
                 disabled={btnDisabled}
                 onClick={onClick}

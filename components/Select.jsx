@@ -26,8 +26,6 @@
 
 const Select = (props) => {
     const {
-        fieldProps = {
-        },
         content = {
             DefaultSelect: {
                 AF: 'Afghanistan',
@@ -35,8 +33,16 @@ const Select = (props) => {
             },
             placeHolder : 'Country'
         }
+        
     } = props;
-    const {placeholderKey = 'placeHolder', fieldId, value, optionsKey = 'DefaultSelect', keyAsValue = true, disablePlaceHolder = true} = fieldProps;
+    const {
+        placeholderKey = 'placeHolder', 
+        fieldId, value, 
+        optionsKey = 'DefaultSelect', 
+        keyAsValue = true, 
+        disablePlaceHolder = true,
+        customCssClassName = 'defaultSelect'
+    } = fieldProps;
 
     const optionList = () => {
         const list = content[`${optionsKey}`];
@@ -47,14 +53,14 @@ const Select = (props) => {
         return constructedList;
     };
     return (
-        <div className='vx_floatingLabel'>
+        <div className={`${customCssClassName}_container`}>
             <label htmlFor={fieldId}>{content[`${placeholderKey}`]}</label>
             <div className="vx_select" data-label-content={content[`${placeholderKey}`]}>
                 <select
                     value={value}
                     id={fieldId}
                     name={fieldProps.name}
-                    className="form-control vx_form-control"
+                    className={customCssClassName}
                 >
                     {!(disablePlaceHolder) ? <option>{content[`${placeholderKey}`]}</option> : ''}
                     {optionList()}

@@ -32,7 +32,7 @@ const CheckBox = (props) => {
     };
 
     return (
-        <div className ={`vx_checkbox ${customCssClassName}`}>
+        <div className ={customCssClassName}>
             {renderCheckBox(fieldProps)}
         </div>
     );
