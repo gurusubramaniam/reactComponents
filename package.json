@@ -25,11 +25,18 @@
     ]
   },
   "license": "MIT",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }  
+  },
   "dependencies": {
     "react": "^16.6.0",
     "react-dom": "^16.6.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "babel-core": "^6.6.5",
     "babel-jest": "^23.6.0",
     "babel-loader": "^7.1.4npm ",
@@ -53,8 +60,9 @@
     "progress-bar-webpack-plugin": "^1.11.0",
     "react-test-renderer": "^16.6.0",
     "semantic-release": "^17.0.7",
+    "webpack": "^4.20.2 ",
     "webpack-bundle-analyzer": "^3.0.3",
     "webpack-chunk-hash": "^0.6.0",
-    "webpack-cli": "^2.0.15"
+    "webpack-cli": "^3.1.1"
   }
 }
