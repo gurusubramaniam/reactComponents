@@ -1,8 +1,8 @@
  {
-     "Heading": "./react/components/Heading",
-     "Button": "./react/components/Button",
-     "Paragraph": "./react/components/Paragraph",
-     "RadioButton": "./react/components/RadioButton",
-     "CheckBox": "./react/components/CheckBox",
-     "DynamicElement": "./react/components/DynamicElement"
+     "Heading": "./components/Heading",
+     "Button": "./components/Button",
+     "Paragraph": "./components/Paragraph",
+     "RadioButton": "./components/RadioButton",
+     "CheckBox": "./components/CheckBox",
+     "DynamicElement": "./components/DynamicElement"
  }
