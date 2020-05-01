@@ -1,5 +1,5 @@
 {
-  "name": "portableonboarding",
+  "name": "reactcomponents-guru",
   "version": "1.0.0",
   "description": "Bundles all the onboarding components per channel and keep the bundle to be exported in build folder.",
   "keywords": [
@@ -14,6 +14,7 @@
   "scripts": {
     "watch": "webpack --watch --config webpack.config.js",
     "build": "webpack --config webpack.config.js",
+    "sematic-release": "semantic-release --no-cli",
     "test": "jest"
   },
   "jest": {
@@ -43,7 +44,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }  
+    }
   },
   "dependencies": {
     "react": "^16.6.0",
