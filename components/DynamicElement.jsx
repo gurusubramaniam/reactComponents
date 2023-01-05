@@ -4,7 +4,7 @@
  * Description:
  *      Intent for this Component is that we can get rid of any of the display level compoent for instance we dont need below component as separate component.
  *      <p>, <h> tags , <span>, <div>
- *      TODO:This comoponent need to be empoverd to get the child as props and inject them inside the parent. so that div makes sense.
+ *      TODO:This comoponent need to be changed to get the child as props and inject them inside the parent. so that div makes sense.
  * Example:
  * Expected Props should be in this example format
  * {
@@ -12,8 +12,8 @@
  *      pageHeader : "sampleContent"
  *  },
  *  fieldProps {
- *      headSize : 4 (this will render h4 tag)
- *      headingLabel : "pageHeader" (this value pageHeader is the key which should be present in above content section)
+ *      tagName : h4 (this will render h4 tag)
+ *      tagLabel : "pageHeader" (this value pageHeader is the key which should be present in above content section)
  *  }
  * }
  */
