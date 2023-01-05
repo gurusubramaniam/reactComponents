@@ -23,7 +23,6 @@ const Button = (props) => {
     const {name = 'defaultButton', buttonLabel = 'DefaultButtonText', value, customBtnClassName = '', dataAutomationId = '', btnDisabled} = fieldProps;
 
     return (
-        <div className={customBtnClassName}>
             <button
                 name={name}
                 id={name}
@@ -35,7 +34,6 @@ const Button = (props) => {
             >
                 {content[buttonLabel]}
             </button>
-        </div>
     );
 };
 
