@@ -22,9 +22,7 @@ const Paragraph = (props) => {
     const {paragraphText = 'sample', customCssClassName} = fieldProps;
 
     return (
-        <div className={customCssClassName}>
-            <p dangerouslySetInnerHTML={{__html: content[`${paragraphText}`]}} />
-        </div>
+            <p className={customCssClassName} dangerouslySetInnerHTML={{__html: content[`${paragraphText}`]}} />
     );
 };
 
